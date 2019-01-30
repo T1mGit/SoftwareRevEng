@@ -29,7 +29,7 @@ Most AMS instructions take the form <code>COMMAND destination source</code> or <
 <b>POP</b>: Pops the last-in value from stack to destination.<br>
 <b>XOR</b>: bitwise XOR. Result goes in destination.<br>
 <b>DIV</b>: Unsigned Division. For 64 bit division, the high order bits of the dividend will be in RDX and the low order in RAX. The resulting quotient goes in RAX and remainder in RDX.<br>
-<b>LODS<b>: Load String from Memory into RAX, EAX, AX, AL depending on length.
+<b>LODS</b>: Load String from Memory into RAX, EAX, AX, AL depending on length.
 <b>STOS</b>: Stores registry data into memory (string).
 String instruction may use combination register DS:RSI where DS is data segment or ES:RDI where ES is extra segment<br>
 <b>LOOP</b>: The loop count is stored in RCX. LOOP jumps to the specified label until RCX<=0 decrementing RCX on each iteration.
@@ -38,7 +38,7 @@ String instruction may use combination register DS:RSI where DS is data segment 
 <b>rsi, rdi</b>: source and destination index for string operations
 <b>rax, rbx, rdx</b>: Data registers (Accumulator, Base, Data). Both rax and rdx are used for input/output/arithmetic. rbx often used for indexed addressing.<br>
 <br>
-<h3>What does this function do</3>
+<h3>What does this function do</h3>
 Stack: |rbp|rsp|<br>
 Line 0,4,7 10: These lines together result in the values stored in rsi and rdi being swaped.<br>
 Line 3: saves contents of rbx to stack.<br>
