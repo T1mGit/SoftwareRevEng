@@ -48,7 +48,7 @@ Start of loop<br>
 Reading further down we see the loop command, but the rcx register is not evident, thus we know not how many time the loop will excute.<br>
 It may result in a memory violation.<br>
 Inide the loop are the commands lods, div & stos. Load from memory divide by by valu in rbx and put back to memory.<br>
-The rdi and rsi registers do not apear to be modified and there is no offset apparent, so it would seem that the same memory reference will be repeated divided by some value in rbx, in effect calculating a modulus.<br>
+The rdi and rsi registers do not apear to be modified and there is no offset apparent, so it would seem that the same memory reference will be repeated divided by some value in rbx.<br>
 Finally the original value of rbx is reinstated (from stack) and the remainder after the modulus operations is stored in rax.<br>
 <br>
 <h3>Summary</h3>
